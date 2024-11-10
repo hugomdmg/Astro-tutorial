@@ -1,0 +1,18 @@
+---
+import Social from "./Social.astro";
+const platform = "github";
+const username = "hugomdmg";
+---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+
+<footer>
+  <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <Social platform="linkedin" username="in/hugo-munoz-de-morales-grado"/>
+  <Social platform="github" username="hugomdmg"/>
+</footer>
